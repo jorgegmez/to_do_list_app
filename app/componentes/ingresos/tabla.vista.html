@@ -1,0 +1,51 @@
+<div class="container-fluid">
+  <div class="row">
+    <header id="headerTabla">
+      <div class="col-md-3">
+        <div class="contenedor_logo">
+          <img src="imgs/logo_fondo_claro.png" alt="logo_toList" id="logoHeader" width="300px" height="100px">
+        </div>
+
+      </div>
+      <div class="col-md-9">
+        <div>
+          <span>Nombre de usuario</span>
+        </div>
+      </div>
+    </header>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12">
+      <div class="main" id="contenedor_main">
+        <h3>Tabla con los proyectos y el ingreso que genera cada uno.</h3>
+
+        <div class="container">
+          <table class="table table-striped" id="tblIngresos">
+            <thead>
+              <th>Empresa</th>
+              <th>Proyecto</th>
+              <th>Ingresos</th>
+            </thead>
+            <tbody>
+              <tr ng-repeat="tablaIngresos in ingresosCtrl.listaProyectos">
+                <td>{{tablaIngresos.nombreEmpresa}}</td>
+                <td>{{tablaIngresos.nombreProyecto}}</td>
+                <td>{{tablaIngresos.ingreso | currency}}</td>
+              </tr>
+            </tbody>
+
+          </table>
+        </div>
+
+        <div class="row">
+          <div class="col-md-11">
+            <input type="button" class="btn" value="Volver" id="btnVolver">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div iu-view></div>

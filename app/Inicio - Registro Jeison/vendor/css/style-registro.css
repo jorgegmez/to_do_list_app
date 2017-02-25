@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:300|Roboto:700');
+
+html{
+  width: 100%;
+  height: 100%;
+}
+
+body{
+  background-image: url("../imgs/fondo.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center 0px;
+	background-attachment: fixed;
+}
+
+.hd_img{
+  width: 100%
+}
+
+.hd_img img{
+  width: 65%;
+  margin: 30px 16.5% 30px ;
+}
+
+.formulario{
+  font-family: 'Quicksand', sans-serif;
+  background: #6d6e70; 
+  padding: 20px 2%;
+  border-radius: 18px;   
+}
+
+.form-control{
+  width:70%;
+  height: 43px;
+  margin: 0 auto 15px;
+  border-radius: 10px;
+  
+}
+
+.labfecha{
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.5em;
+  margin-top: 3px ;
+  color:#bcbec0;
+  margin-left:15%
+}
+
+.fecha{
+  float: right;
+  width: 32%;
+  margin-right: 15% 
+}
+
+::placeholder{
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.5em;
+}
+::-webkit-input-placeholder { 
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.5em;
+}
+
+.btn{
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.7em;
+  width: 40%;
+  border-radius: 10px;
+}
+
+.inSes{
+  margin-left: 0
+}
+
+.reg{
+  float: right;
+  margin-right: 0;
+}
+
+.entrar{
+  background: #aa96af;
+  margin: 0 30%;
+   color: #e8dbe4;
+}
+
+.btn:hover{
+  background: #7c6179;
+   color: #e8dbe4;
+}
+
+.btn:focus{
+  background: #aa96af;
+   color: #e8dbe4;
+}
+
+input:focus{
+  border-style:none; 
+}
+
+
+.has-error{
+  border-color: 4px solid red;
+}
+
+.help-block{
+  color: red;
+}
+
+.alerta{
+  font-family: 'arial', sans-serif;
+  font-weight: 700;
+  width: 70%;
+  margin: auto;
+}

@@ -1,0 +1,28 @@
+
+			
+			<div class=" form-group" >
+
+			<div ng-class="{ 'has-error' : formulario.nombre.$invalid && formulario.nombre.$dirty}">
+				<label for="nombre" class="sr-only">Usuario</label>
+			    <input type="text" id="usuario" class="form-control"  placeholder="Usuario"  name="nombre" class="form-control" ng-model="regSesionCtrl.usuario" required>
+
+			    <div class="alerta" ng-show="formulario.nombre.$dirty">
+			    <span ng-show="formulario.nombre.$error.required" class="help-block">Campo usuario obligatorio</span>
+			    </div>
+			 </div>
+
+			 <div ng-class="{ 'has-error' : formulario.contrasenna.$invalid && formulario.contrasenna.$dirty}">
+			    <label for="contrasenna" class="sr-only">Contraseña:</label>
+			    <input type="password" name="contrasenna" id="contrasenna" class="form-control"  placeholder="Contraseña"  class="form-control" ng-model="regSesionCtrl.contrasennaVal" required>
+
+			    <div class="alerta" ng-show="formulario.contrasenna.$dirty">
+			    	<span class="help-block" ng-show="formulario.contrasenna.$error.required">Campo contraseña obligatorio</span>
+			    </div>
+			</div>    
+			</div>
+		
+
+		
+			<div class="form-group">
+				    <input type="button" ng-disabled="formulario.$invalid" class="btn entrar" id="iniciarSes" value="Entrar" ng-click="regSesionCtrl.validar()" >
+			</div>

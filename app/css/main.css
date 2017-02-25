@@ -1,0 +1,476 @@
+/*Adriana y Jordy*/
+@import url('https://fonts.googleapis.com/css?family=Quicksand:300|Roboto:700');
+
+html{
+  width: 100%;
+  height: 100%;
+}
+
+.contenedor{
+  background-image: url("../imgs/fondo.png");
+
+}
+
+.formulario{
+  font-family: 'Quicksand', sans-serif;
+  background: #6d6e70;
+  padding: 20px 2%;
+  border-radius: 18px;
+}
+
+.form-control{
+  width:70%;
+  height: 43px;
+  margin: 0 auto 15px;
+  border-radius: 10px;
+
+}
+
+.form-control-label{
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.5em;
+  margin-top: 3px ;
+  color:#bcbec0;
+  margin-left:15%
+}
+
+.fecha{
+  float: right;
+  width: 32%;
+  margin-right: 15%
+}
+
+::placeholder{
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.5em;
+}
+::-webkit-input-placeholder {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.5em;
+}
+
+.btn{
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.7em;
+  width: 40%;
+  border-radius: 10px;
+}
+
+
+.btn btn-primary{
+  background: #aa96af;
+  margin: 0 30%;
+   color: #e8dbe4;
+}
+
+.btn:hover{
+  background: #7c6179;
+   color: #e8dbe4;
+}
+
+.btn:focus{
+  background: #aa96af;
+   color: #e8dbe4;
+}
+
+input:focus{
+  border-style:none;
+}
+
+/*Jeison*/
+@import url('https://fonts.googleapis.com/css?family=Quicksand:300|Roboto:700');
+
+html{
+  width: 100%;
+
+}
+
+.main{
+  width: 100%;
+  height: 768px;
+  background-image: url("../imgs/fondo.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+	background-attachment: fixed;
+}
+
+.hd_img{
+  width: 100%
+}
+
+.hd_img img{
+  width: 65%;
+  margin: 30px 16.5% 30px ;
+}
+
+.formulario{
+  font-family: 'Quicksand', sans-serif;
+  background: #6d6e70;
+  padding: 20px 2%;
+  border-radius: 18px;
+}
+
+.form-control{
+  width:70%;
+  height: 43px;
+  margin: 0 auto 15px;
+  border-radius: 10px;
+
+}
+
+.labfecha{
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.5em;
+  margin-top: 3px ;
+  color:#bcbec0;
+  margin-left:15%
+}
+
+.fecha{
+  float: right;
+  width: 32%;
+  margin-right: 15%
+}
+
+::placeholder{
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.5em;
+}
+::-webkit-input-placeholder {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.5em;
+}
+
+.btn{
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.7em;
+  width: 40%;
+  border-radius: 10px;
+}
+
+.inSes{
+  margin-left: 0
+}
+
+.reg{
+  float: right;
+  margin-right: 0;
+}
+
+.entrar{
+  background: #aa96af;
+  margin: 0 30%;
+   color: #e8dbe4;
+}
+
+.btn:hover{
+  background: #7c6179;
+   color: #e8dbe4;
+}
+
+.btn:focus{
+  background: #aa96af;
+   color: #e8dbe4;
+}
+
+input:focus{
+  border-style:none;
+}
+
+
+.has-error{
+  border-color: 4px solid red;
+}
+
+.help-block{
+  color: red;
+}
+
+.alerta{
+  font-family: 'arial', sans-serif;
+  font-weight: 700;
+  width: 70%;
+  margin: auto;
+}
+
+/*Jorge*/
+/*Header*/
+/* Links */
+a {
+    color: #e75f51;
+    word-wrap: break-word;
+
+    -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -o-transition: color 0.1s ease-in, background 0.1s ease-in;
+    transition: color 0.1s ease-in, background 0.1s ease-in;
+}
+
+a:hover,
+a:focus {
+    color: #7b7b7b;
+    text-decoration: none;
+    outline: 0;
+}
+
+a:before,
+a:after {
+    -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -o-transition: color 0.1s ease-in, background 0.1s ease-in;
+    transition: color 0.1s ease-in, background 0.1s ease-in;
+}
+
+ hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+.navbar-default {
+	background-color: #e9dce5;
+	border-color: transparent;
+  height: 6.250em;
+}
+
+.navbar-default .navbar-brand {
+	color: white;
+}
+
+.navbar-default .navbar-nav > li > a {
+	color: white;
+}
+
+#usuario{
+  font-size: 1.375em;
+  margin-top: 1.518em;
+  font-family: 'Quicksand', sans-serif;
+}
+
+/*Main*/
+.mt{
+  margin-top:8.818em;
+  margin-bottom: 1.818em;
+}
+.row_1{
+  padding-bottom: 2em;
+}
+
+.prioridad{
+  background-color: #433950;
+  height: 20.818em;
+  border-top-left-radius: 20px;
+}
+
+label{
+  font-family: 'Roboto', sans-serif;
+  color: #ffffff;
+  line-height: 15px;
+  margin-left: 5%;
+  margin-top: 2em;
+  font-size: 1.500em;
+  text-transform: uppercase;
+}
+
+#label_Estado{
+  margin-top: 2.8em;
+}
+
+.output_datos{
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.375em;
+  margin-left: 5%;
+}
+
+.info_tarea{
+  background-color: #e9dce5;
+  height: 20.818em;
+  border-top-right-radius: 20px;
+}
+
+.nombre_tarea{
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  color: #414042;
+  font-size: 1.438em;
+  margin-left: 2%;
+}
+
+.fecha{
+  font-family: 'Quicksand', sans-serif;
+  text-align: right;
+  text-transform: uppercase;
+  color: #414042;
+  font-size: 1.438em;
+  margin-left: 2%;
+}
+
+.descripcion{
+  font-family: 'Quicksand', sans-serif;
+  color: #414042;
+  margin-left: 1%;
+  font-size: 1.438em;
+  line-height: 19px;
+}
+
+.costo{
+  font-family: 'Quicksand', sans-serif;
+  color: #414042;
+  margin-left: 1%;
+  font-size: 1.438em;
+  line-height: 19px;
+  margin-top: 0.5em;
+}
+
+.empresa{
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  color: #414042;
+  font-size: 1.438em;
+  margin-left: 2%;
+  margin-top: 0.5em;
+}
+
+.industria{
+  font-family: 'Quicksand', sans-serif;
+  color: #414042;
+  margin-left: 2%;
+  font-size: 1.438em;
+  line-height: 19px;
+  margin-top: 0.5em;
+}
+
+.ubicacion{
+  font-family: 'Quicksand', sans-serif;
+  color: #414042;
+  margin-left: 4%;
+  font-size: 1.438em;
+  line-height: 19px;
+  margin-top: 0.5em;
+}
+
+.btnEditar{
+  background-color: #b397b2;
+  border: #b397b2;
+  float: right;
+}
+
+.btnEditar:hover{
+  background-color: #433950;
+  border: #433950;
+}
+
+#eliminar{
+  float: right;
+}
+
+.btnIngresos{
+  background-color: #b397b2;
+  border: #b397b2;
+
+}
+
+.btnIngresos:hover{
+  background-color: #433950;
+  border: #433950;
+}
+
+.btnAgregar{
+  background-color: #b397b2;
+  border: #b397b2;
+
+}
+
+.btnAgregar:hover{
+  background-color: #433950;
+  border: #433950;
+}
+
+/*Kevin*/
+
+#headerTabla{
+  background: #e9dce5;
+  height: 7.375em;
+  padding: 1.563em 0 0 0;
+}
+
+#headerTabla span{
+  font-size: 2.188em;
+  float: right;
+  font-family: 'Roboto', sans-serif;
+}
+
+#contenedor_main{
+  padding: 3.125em 0 0 0;
+}
+
+div#select{
+  margin-bottom: 1.875em;
+}
+
+div.contenedor_logo{
+  position: relative;
+}
+
+div.contenedor_logo img#logoHeader{
+  position: absolute;
+  top: -25px;
+}
+
+/*Estilos tabla*/
+
+h3{
+  margin-bottom: 2.188em;
+  font-family: 'Roboto', sans-serif;
+}
+
+#tblIngresos{
+  background: #433950;
+}
+
+#tblIngresos thead{
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+}
+
+#tblIngresos thead th{
+  text-transform: uppercase;
+  padding: 1.263em 0 1.263em 0;
+  font-size: 1.625em;
+  font-family: 'Quicksand', sans-serif;
+}
+
+#tblIngresos th,td{
+  text-align: center;
+  font-size: 1.250em;
+
+}
+
+#tblIngresos tbody tr:nth-child(odd){
+  background: #e9dce5;
+}
+
+#tblIngresos tbody tr:nth-child(even){
+  background: #d9c5db;
+}
+
+
+/*Estilos botón volver*/
+
+#btnVolver{
+  float: right;
+  background: #b397b2;
+  color: #ffffff;
+}
+
+#btnVolver:hover{
+  background: #e9dce5;
+  color: #333;
+}

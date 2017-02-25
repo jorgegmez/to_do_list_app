@@ -1,0 +1,69 @@
+    <!--Header-->
+    <!-- Fixed navbar -->
+    <div class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"><b><img src="imgs/logo2.png" width="250px" alt="logo"></b></a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <output name="usuario" id="usuario">nombre de usuario</output>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+    <!--Main-->
+    <main class="container mt">
+      <div class="row row_1" ng-repeat="tareas in perfilTCtrl.listaTareas">
+        <div class="col-xs-6 col-sm-6 col-lg-3 prioridad">
+          <label for="txtPrioridad">Prioridad:</label>
+          <output id="txtPrioridad" name="prioridad" class="output_datos">{{tareas.prioridadTarea}}</output><!--Ingresar datos despues-->
+          <label for="txtEstado" id="label_Estado">Estado:</label>
+          <output id="txtEstado" name="estado" class="output_datos">{{tareas.estadoTarea}}</output>
+        </div>
+        <div class="col-xs-6 col-sm-6 col-lg-9 info_tarea">
+          <div class="col-sx-12 col-sm-6 col-lg-6">
+            <output name="nombreTarea" class="nombre_tarea">{{tareas.nombreTarea}}</output>
+          </div>
+          <div class="col-sx-12 col-sm-6 col-lg-6">
+            <output name="fecha" class="fecha">{{tareas.fechaTarea}}</output>
+          </div>
+          <div class="col-sx-12 col-sm-12 col-lg-12">
+            <output name="descripcion" class="descripcion">{{tareas.descripcionTarea}}</output>
+          </div>
+          <div class="col-sx-12 col-sm-12 col-lg-12">
+            <output name="costo" class="costo">{{tareas.costoTarea | currency}}</output>
+          </div>
+          <div class="col-sx-12 col-sm-12 col-lg-12">
+            <output name="empresa" class="empresa">{{tareas.empresaTarea}}</output>
+          </div>
+          <div class="col-sx-12 col-sm-12 col-lg-12">
+            <output name="industria" class="industria">{{tareas.industriaEmpresaTarea}}</output>
+          </div>
+          <div class="row"></div>
+          <div class="col-sx-12 col-sm-6 col-lg-6">
+            <output name="ubicacion" class="ubicacion">{{tareas.ubicacionEmpresaTarea}}</output>
+          </div>
+          <div class="col-sx-12 col-sm-6 col-lg-6">
+            <a href="" id="eliminar"><img src="imgs/boton-eliminar.png" alt="eliminar tarea" width=40px></a>
+            <a href="/?#/tareaEmpresa" class=" btnEditar btn btn-primary">Editar</a>
+          </div>
+        </div>
+      </div>
+      <div class="row row_btns">
+        <div class="col-xm-4 col-sm-4 col-md-4 col-lg-5">
+          <a href="/?#/ingresos" class="btn btn-primary btnIngresos pull-right">Ver ingresos</a>
+        </div>
+        <div class="col-xm-4 col-sm-4 col-md-4 col-lg-5">
+          <a href="/?#/tareaEmpresa" class="btn btn-primary btnAgregar pull-right">Agregar tarea</a>
+        </div>
+      </div>
+    </main>
+
+    <div iu-view></div>

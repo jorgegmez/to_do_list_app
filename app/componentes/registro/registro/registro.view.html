@@ -1,0 +1,69 @@
+			<div class=" form-group">
+				
+				<div ng-class="{ 'has-error' : formulario.nombre.$invalid && formulario.nombre.$dirty}">
+
+				<label for="nombre" class="sr-only">Nombre Completo:</label>
+			    <input type="text" name="nombre" id="nombre" class="form-control" placeholder="Nombre Completo" class="form-control" required  ng-model="regSesionCtrl.nombre">
+
+			     <div class="alerta" ng-show="formulario.nombre.$dirty">
+			    	<span class="help-block" ng-show="formulario.nombre.$error.required">Campo nombre obligatorio</span>
+			    </div>
+
+			    </div>
+				
+				<div ng-class="{ 'has-error' : formulario.fechaNac.$invalid && formulario.fechaNac.$dirty}">
+
+			    <label for="fechaNacimiento" class="labfecha" >Fecha Nacimiento:</label>
+			    <input type="text" name="fechaNac" onfocus="(this.type='date')" onblur="(this.type='text')" name="fechaNacimiento" id="fechaNac" class="form-control fecha" placeholder="Dd/Mm/Aaaa" class="form-control" required ng-model="regSesionCtrl.fechaNacimiento">
+
+			     <div class="alerta" ng-show="formulario.fechaNac.$dirty">
+			    	<span class="help-block" ng-show="formulario.fechaNac.$error.required">Campo fecha nacimiento obligatorio</span>
+			    </div>
+
+			    </div>
+				
+				<div ng-class="{ 'has-error' : formulario.edad.$invalid && formulario.edad.$dirty}">
+
+			    <label for="edad" class="sr-only">Edad:</label>
+			    <input type="text" name="edad"  pattern="[0-9]{2}"  id="edad" class="form-control" placeholder="Edad" class="form-control" required ng-model="regSesionCtrl.edad">
+
+			     <div class="alerta" ng-show="formulario.edad.$dirty">
+			    	<span class="help-block" ng-show="formulario.edad.$error.required">Campo edad obligatorio</span>
+
+			    	<span class="help-block" ng-show="formulario.edad.$error.pattern">Formato edad invalido</span>
+			    </div>
+
+			    </div>
+				
+				<div ng-class="{ 'has-error' : formulario.email.$invalid && formulario.email.$dirty}">
+
+			    <label for="email" class="sr-only">Correo electrónico:</label>
+			    <input type="email" name="email" id="correo" class="form-control" placeholder="Correo electrónico" class="form-control"  required ng-model="regSesionCtrl.correo">
+
+			     <div class="alerta" ng-show="formulario.email.$dirty">
+
+			    	<span class="help-block" ng-show="formulario.email.$error.required">Campo correo electrónico obligatorio</span>
+
+			    	<span class="help-block" ng-show="formulario.email.$error.email">Formato correo electrónico invalido</span>
+			    </div>
+
+			    </div>
+				
+				<div ng-class="{ 'has-error' : formulario.contrasenna.$invalid && formulario.contrasenna.$dirty}">
+
+			    <label for="contrasenna" class="sr-only">Contraseña:</label>
+			    <input type="password"  name="contrasenna" id="contrasenna" class="form-control" placeholder="Contraseña" class="form-control" required ng-model="regSesionCtrl.contrasenna">
+
+			     <div class="alerta" ng-show="formulario.contrasenna.$dirty">
+			    	<span class="help-block" ng-show="formulario.contrasenna.$error.required">Campo contraseña obligatorio</span>
+			    </div>
+
+			    </div>
+			</div>
+		
+
+		
+			<div class="form-group">
+				    <input type="button" ng-disabled="formulario.$invalid" class="btn entrar" value="Entrar" ng-click="regSesionCtrl.save()">
+			</div>
+
